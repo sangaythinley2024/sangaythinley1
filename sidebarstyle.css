@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #c0a264;
+  overflow: hidden;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  display: inline-block;
+  width: calc(100% / 5); /* Adjust number_of_items accordingly */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: absolute;
+  top: 60px; /* Height of the navbar */
+  left: 0;
+  background-color: #6a4828;
+  width: 100px;
+  height: 100vh;
+  padding: 20px;
+  position: sticky;
+  top: 64px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: black;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+.sidebar a:hover {
+  color: #f5c444;
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 180px; /* Space for the sidebar */
+  padding: 20px;
+}
+
+.background-image {
+  position: relative;
+  background-image: url("template1.jpg"); /* Add the image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-text h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 28px;
+  color: #94c651;
+  margin-top: 10px;
+}
+
+.description {
+  background-color: #d8b98b;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Responsive Design 
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .main-content {
+    margin-left: 120px;
+  }
+
+  .main-text h1 {
+    font-size: 32px;
+  }
+
+  .subheading {
+    font-size: 22px;
+  }
+}*/

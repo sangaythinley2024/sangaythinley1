@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--form:post[action=http://www.example.com/studentsinfo]-->
+    <form action="http://www.example.com/studentsinfo" method="post">
+      <!--div>label[for=nameBox]{Name:}+input#nameBox[name=stdName]-->
+      <div>
+        <label for="nameBox">Name:</label>
+        <input type="text" id="nameBox" name="stdName" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="passBox" name="stdpassword" />
+      </div>
+
+      <div>
+        <label for="addressBox">Address:</label>
+        <textarea
+          name="stdAddress"
+          id="addressBox"
+          cols="30"
+          rows="2"
+        ></textarea>
+      </div>
+      <div>
+        <label for="phoneBox">Phone:</label>
+        <input
+          type="tel"
+          id="phoneBox"
+          name="stdPhone"
+          pattern="[0-9]{8}"
+          title="should have 8 digit"
+        />
+      </div>
+      <div>
+        <label for="emailBox">Enter your email:</label>
+        <input
+          type="email"
+          id="emailBox"
+          name="stdemail"
+          placeholder="Kinley@example.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="bdBox">DOB:</label>
+        <input type="date" id="bdBox" name="stdBd" min="01/01/2020" />
+      </div>
+      <div>
+        <label for="atBox">Arriving Time:</label>
+        <input type="time" id="atBox" name="stdAt" />
+      </div>
+    </form>
+    <div>
+      <label for="rangeBox">Rate GCIT (0=poor; 10=great) : </label>
+      0
+      <input
+        name="stdRate"
+        id="rangeBox"
+        type="range"
+        value="5"
+        step="1"
+        min="0"
+        max="10"
+      />
+      10
+    </div>
+    <div>
+      <label>Gender:</label>
+      <fieldset>
+        <label for="maleBox">Male</label>
+        <input name="stdGender" id="maleBox" value="Male" type="radio" />
+        <label for="femaleBox">Female</label>
+        <input name="stdGender" id="femaleBox" value="Female" type="radio" />
+      </fieldset>
+    </div>
+    <div>
+      <label for="courseBox">Course:</label>
+      <select id="courseBox" name="courseList" form="course">
+        <option value="Full Stack">Full Stack</option>
+        <option value="BlockChain">Block Chain</option>
+        <option value="AI and ML">AI and ML</option>
+        <option value="Media Development">Media Developement</option>
+      </select>
+    </div>
+    <div>
+      <input type="checkbox" id="mailList" name="mailList" value="yes" />
+      <label for="mailList">
+        Add me for great promotion and special events</label
+      ><br />
+    </div>
+    <div>
+      <input type="checkbox" id="mailList" name="mailList" value="yes" />
+      <label for="mailList">
+        Add me for great promotion and special events</label
+      ><br />
+    </div>
+    <div id="buttons">
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Cancel" />
+    </div>
+  </body>
+</html>

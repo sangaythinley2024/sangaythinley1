@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: #a8140c;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: auto;
+        transition: background-color 4s ease-out;
+        transition: 3s;
+        position: relative;
+      }
+      .box:hover {
+        border-radius: 50%;
+        transform: translate(450px, 450px) rotate(180deg) scale(0.35)
+          skew(20deg);
+        background-color: teal;
+        cursor: pointer;
+        margin-right: 0;
+        margin-bottom: 0;
+        box-shadow: 170px 20px 35px rgb(223, 11, 135);
+      }
+      .text {
+        margin-top: 30%;
+        margin-right: 30%;
+        font-size: 2.5em;
+        color: #10d70d;
+        text-shadow: 3px 7px 2px rgb(38, 0, 255), 5px 10px 2px rgb(255, 0, 21),
+          7px 15px 2px rgb(246, 255, 0);
+        text-size-adjust: 20px;
+        position: absolute;
+        text-align: center;
+        transform: translate(50px, 50px);
+      }
+      img {
+        margin-top: 20%;
+        margin-left: 25%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="img/sherubtse-logo.png" alt="College logo" />
+      <div class="text">Sherubtse College <br />Royal University of Bhutan</div>
+    </div>
+    <button>submit</button>
+  </body>
+</html>

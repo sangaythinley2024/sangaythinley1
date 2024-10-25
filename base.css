@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*Import the fonts for usage*/
+@font-face {
+  font-family: Precious;
+  src: url(Precious.ttf) format("truetype");
+}
+@font-face {
+  font-family: Avara;
+  src: url(Avara.ttf) format("truetype");
+}
+@font-face {
+  font-family: Process;
+  src: url(Process-magenta.otf) format("opentype");
+}
+html {
+  background-color: rgb(90, 57, 0);
+}
+body {
+  background-color: rgb(94, 78, 49);
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+}
+
+nav a {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+footer {
+  background-color: hsla(39, 81%, 49%, 0.7);
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, sans-serif;
+  font-size: 0.7em;
+}
+header {
+  background-color: rgb(228, 240, 234);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+body > header > img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+body {
+  background-color: rgb(94, 78, 49);
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1020px;
+  min-width: 640px;
+}
+
+nav a {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer {
+  background-color: hsla(39, 81%, 49%, 0.7);
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, sans-serif;
+  font-size: 0.7em;
+  border-top: 2px solid #f3f7f3;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+nav {
+  display: table;
+  width: 100%;
+  
+}
+nav > ul {
+  display: table-row;
+}
+
+nav > ul > li {
+  display: table-cell;
+  text-align: center;
+}
+nav a {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+footer {
+  display: block;
+  background-color: hsla(39, 81%, 49%, 0.7);
+  position: relative;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+  font-size: 0.7em;
+  border-top: 2px solid #f3f7f3;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+nav a:link {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(170, 144, 59);
+}
+nav a:hover,
+nav a:active {
+  color: yellow;
+  background-color: rgb(160, 120, 20);
+  text-decoration: underline rgb(216, 229, 225);
+  padding-left: 15px;
+  transition: 1s;
+  border-radius: 50%;
+}
+nav a:visited {
+  color: red;
+  text-decoration: none;
+  background-color: rgb(170, 144, 59);
+}
+.box {
+  background-color: rgb(223, 59, 4);
+  border: 15px solid rgba(0, 255, 89, 0.872);
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+
+  margin-left: 80%;
+  margin-top: 0rem;
+}
+
